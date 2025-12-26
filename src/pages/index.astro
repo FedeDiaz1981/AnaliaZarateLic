@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import EspacioTerapeutico from "../components/EspacioTerapeutico.astro";
+import FormaDeTrabajo from "../components/FormaDeTrabajo.astro";
+import Razones from "../components/Razones.astro";
+import Services from "../components/Services.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Landing">
+  <Header brand="Analía Zárate" />
+  <main>
+    <Hero />
+    <About />
+    <EspacioTerapeutico />
+    <FormaDeTrabajo />
+    <Razones />
+    <Contact />
+  </main>
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,17 @@
+<section id="servicios" class="mx-auto max-w-6xl px-6 py-16">
+  <h2 class="text-2xl font-semibold">Servicios</h2>
+  <p class="mt-2 max-w-2xl text-slate-600">
+    Listado simple, 3–6 ítems, con foco en qué resultado entregás.
+  </p>
+
+  <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {["Servicio 1", "Servicio 2", "Servicio 3"].map((t) => (
+      <div class="rounded-2xl border bg-white p-6 shadow-sm">
+        <h3 class="font-semibold">{t}</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Descripción corta. 2–3 líneas máximo.
+        </p>
+      </div>
+    ))}
+  </div>
+</section>

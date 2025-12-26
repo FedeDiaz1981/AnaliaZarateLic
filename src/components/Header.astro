@@ -1,0 +1,28 @@
+---
+const { brand = "Tu Marca" } = Astro.props;
+---
+
+<header
+  id="SITE_HEADER"
+  class="relative left-0 ml-0 w-full min-w-0 z-[49] h-[155px]"
+  style="
+    --bg-overlay-color: transparent;
+    --bg-gradient: none;
+    --shd: none;
+    --brwt: 0px;
+    --brwb: 0px;
+    --rd: 0px;
+    --backdrop-filter: none;
+  "
+>
+  <!-- Si querés una “capa” como Wix (overlay), dejala lista -->
+  <div class="absolute inset-0" aria-hidden="true"></div>
+
+  <!-- Contenido -->
+  <div class="relative mx-auto flex h-full max-w-6xl items-center justify-between px-6">
+    <a href="/" class="text-sm font-semibold tracking-wide">
+      {brand}
+    </a>
+
+  </div>
+</header>
