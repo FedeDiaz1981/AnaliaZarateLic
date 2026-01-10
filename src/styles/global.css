@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.reveal { opacity: 0; transform: translateY(10px); transition: opacity .5s ease, transform .5s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transition: none; transform: none; }
+}
+
+/* Reveal suave (sin librerías) */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+:root{
+  --ink: #2E2E2E;
+  --muted: #6B6B6B;
+  --primary: #6D5EF7;   /* acento */
+  --secondary: #FF4FB6; /* acento secundario vivo (usar poco) */
+}
+
+.heading-xl{
+  color: var(--ink);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.heading-lg{
+  color: var(--ink);
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+.kicker{
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+.lead{
+  color: var(--muted);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+.highlight{
+  color: var(--primary);
+  font-weight: 800;
+}
+.highlight2{
+  color: var(--secondary);
+  font-weight: 800;
+}

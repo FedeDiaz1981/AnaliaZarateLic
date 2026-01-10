@@ -1,62 +1,90 @@
-<section id="espacio-terapeutico" class="bg-white">
-  <div class="mx-auto max-w-6xl px-6 py-16 md:py-24">
-    <div class="grid gap-10 md:grid-cols-2 md:items-start">
-      <!-- IZQUIERDA: texto -->
-      <div class="text-[#545454]">
-        <p class="text-[17px] leading-relaxed">
-          La terapia es un espacio cuidado, de confidencialidad y confianza,
-          donde es posible hablar sin juicios y construir sentido sobre aquello
-          que genera malestar.
-        </p>
+<section id="espacio">
+  <div class="grid gap-10 md:grid-cols-2 md:items-start">
+    {/* IZQUIERDA: texto + lista */}
+    <div class="text-[#6B6B6B]">
+      <p class="text-[17px] leading-relaxed">
+        La terapia es un espacio <span class="font-semibold text-[#2E2E2E]">cuidado</span>, de{" "}
+        <span class="font-semibold text-[#2E2E2E]">confidencialidad</span> y{" "}
+        <span class="font-semibold text-[#2E2E2E]">confianza</span>, donde es posible hablar sin juicios y{" "}
+        <span class="font-semibold text-[#2E2E2E]">construir sentido</span> sobre aquello que genera malestar.
+      </p>
 
-        <p class="mt-6 text-[17px] leading-relaxed">
-          Trabajo con personas que atraviesan diferentes situaciones:
-        </p>
+      <p class="mt-6 text-[17px] leading-relaxed">
+        Trabajo con personas que atraviesan diferentes situaciones:
+      </p>
 
-        <ul class="mt-6 space-y-3 text-[17px] leading-relaxed">
-          <li class="flex gap-3">
-            <span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#EF7C8E]"
-            ></span>
-            <span>Angustia, ansiedad o malestar emocional</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#EF7C8E]"
-            ></span>
-            <span>Momentos de crisis personales, vinculares o familiares</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#EF7C8E]"
-            ></span>
-            <span
-              >Sensación de estar desbordadas o desconectadas de sí mismas</span
-            >
-          </li>
-          <li class="flex gap-3">
-            <span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#EF7C8E]"
-            ></span>
-            <span>Dificultades para poner en palabras lo que les sucede</span>
-          </li>
-        </ul>
+      <ul class="mt-6 space-y-3 text-[17px] leading-relaxed">
+        <li class="flex gap-3">
+          <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#6D5EF7]"></span>
+          <span>
+            <span class="font-semibold text-[#2E2E2E]">Ansiedad</span> o malestar emocional
+          </span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#6D5EF7]"></span>
+          <span>
+            Momentos de <span class="font-semibold text-[#2E2E2E]">crisis</span> personales, vinculares o familiares
+          </span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#6D5EF7]"></span>
+          <span>
+            Sensación de estar <span class="font-semibold text-[#2E2E2E]">desbordadas</span> o desconectadas de sí mismas
+          </span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#6D5EF7]"></span>
+          <span>
+            Dificultades para <span class="font-semibold text-[#2E2E2E]">poner en palabras</span> lo que les sucede
+          </span>
+        </li>
+      </ul>
 
-        <p class="mt-6 text-[17px] leading-relaxed">
-          No se trata de respuestas rápidas ni de soluciones prefabricadas, sino
-          de habilitar un proceso de elaboración propio.
+      <p class="mt-6 text-[17px] leading-relaxed">
+        No se trata de <span class="font-semibold text-[#2E2E2E]">respuestas rápidas</span> ni de soluciones prefabricadas,
+        sino de habilitar un proceso de <span class="font-semibold text-[#2E2E2E]">elaboración propia</span>.
+      </p>
+    </div>
+
+    {/* DERECHA: título + card */}
+    <div class="md:pl-10">
+      <div class="flex flex-wrap items-center gap-2">
+        <p class="text-xs font-extrabold tracking-[0.14em] text-[#6D5EF7] uppercase">
+          Espacio terapéutico
         </p>
+        <span class="h-1 w-1 rounded-full bg-black/20"></span>
+        <p class="text-xs font-medium text-[#6B6B6B]">Encuadre y cuidado</p>
       </div>
 
-      <!-- DERECHA: título -->
-      <div class="md:pl-10">
-        <p class="text-[15px] font-medium text-[#545454]">
-          🤍 El espacio terapéutico
+      <h2 class="mt-4 text-[#2E2E2E] font-extrabold tracking-tight leading-tight text-3xl sm:text-4xl">
+        Un espacio de{" "}
+        <span class="relative inline-block">
+          <span class="relative z-10 text-[#6D5EF7]">confianza</span>
+          <span
+            class="absolute -bottom-1 left-0 right-0 h-2 rounded-full bg-[#FF7CC8]/35"
+            aria-hidden="true"
+          ></span>
+        </span>{" "}
+        y confidencialidad
+      </h2>
+
+      <div
+        class="mt-8 rounded-2xl bg-white/75 p-6 ring-1 ring-black/5 shadow-sm
+               transition-transform duration-200 hover:-translate-y-0.5"
+      >
+        <div class="flex items-center justify-between gap-3">
+          <p class="text-sm font-semibold text-[#2E2E2E]">Mi forma de trabajo</p>
+          <span class="rounded-full bg-[#6D5EF7]/10 px-3 py-1 text-[11px] font-semibold text-[#6D5EF7] ring-1 ring-black/5">
+            Proceso
+          </span>
+        </div>
+
+        <p class="mt-2 text-[15px] leading-relaxed text-[#6B6B6B]">
+          Un proceso <span class="font-semibold text-[#2E2E2E]">a tu ritmo</span>, con{" "}
+          <span class="font-semibold text-[#2E2E2E]">escucha activa</span> y un{" "}
+          <span class="font-semibold text-[#2E2E2E]">encuadre claro</span>, para que puedas construir recursos propios y
+          nuevas formas de estar.
         </p>
-
-        <h2
-          class="mt-4 text-[#545454] font-semibold leading-tight text-3xl sm:text-4xl"
-        >
-          Un espacio cuidado, de confidencialidad y confianza
-        </h2>
-
-        <div class="mt-8 h-12 w-12 rounded-full bg-[#EF7C8E]/25"></div>
       </div>
     </div>
   </div>

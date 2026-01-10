@@ -4,37 +4,40 @@ const phoneDisplay = "+54 9 11 33124458";
 const phoneHref = "+5491133124458";
 
 const instagramUser = "ana__mi_psicologa";
-const instagramUrl = "https://www.instagram.com/ana__mi_psicologa?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr";
+const instagramUrl =
+  "https://www.instagram.com/ana__mi_psicologa?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr";
 
 const therapistName = "Analía Zarate";
 ---
 
-<footer id="SITE_FOOTER" class="bg-white">
-  <div class="mx-auto max-w-6xl px-6 py-14">
+<footer class="bg-[#0A1020] text-white">
+  <div class="max-w-6xl mx-auto px-6 py-14">
     <div class="grid gap-10 md:grid-cols-2 md:items-start">
-      <!-- Izquierda: nombre + línea -->
+      {/* Izquierda */}
       <div>
-        <div class="text-[#545454]">
-          <div class="text-2xl font-semibold tracking-tight">
-            {therapistName}
-          </div>
-          <div class="mt-1 text-sm text-[#545454]/80">Licenciada</div>
+        <div>
+          <div class="text-2xl font-semibold tracking-tight">{therapistName}</div>
+          <div class="mt-1 text-sm text-white/70">Licenciada</div>
         </div>
 
-        <div class="mt-6 h-px w-full bg-black/10"></div>
+        <div class="mt-6 h-px w-full bg-white/10"></div>
+
+        <p class="mt-6 max-w-sm text-sm text-white/70">
+          Un espacio de escucha, cuidado y acompañamiento.
+        </p>
       </div>
 
-      <!-- Derecha: contactos -->
-      <div class="text-[#545454]">
+      {/* Derecha */}
+      <div>
         <div class="grid gap-6 sm:grid-cols-2">
-          <!-- Mail -->
+          {/* Mail */}
           <div class="flex items-start gap-3">
-            <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/5">
+            <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/10">
               <svg viewBox="0 0 24 24" class="h-4 w-4" aria-hidden="true">
                 <path
                   fill="currentColor"
                   d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5Z"
-                ></path>
+                />
               </svg>
             </span>
 
@@ -42,21 +45,22 @@ const therapistName = "Analía Zarate";
               <div class="text-sm font-semibold">Mail</div>
               <a
                 href={`mailto:${email}`}
-                class="mt-1 inline-block text-[17px] underline underline-offset-4"
+                class="mt-1 inline-block text-[15px] text-white/80 underline underline-offset-4
+                       transition-colors duration-200 hover:text-white"
               >
                 {email}
               </a>
             </div>
           </div>
 
-          <!-- Phone -->
+          {/* Phone */}
           <div class="flex items-start gap-3">
-            <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/5">
+            <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/10">
               <svg viewBox="0 0 24 24" class="h-4 w-4" aria-hidden="true">
                 <path
                   fill="currentColor"
                   d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01Z"
-                ></path>
+                />
               </svg>
             </span>
 
@@ -64,21 +68,22 @@ const therapistName = "Analía Zarate";
               <div class="text-sm font-semibold">Teléfono</div>
               <a
                 href={`tel:${phoneHref}`}
-                class="mt-1 inline-block text-[17px] underline underline-offset-4"
+                class="mt-1 inline-block text-[15px] text-white/80 underline underline-offset-4
+                       transition-colors duration-200 hover:text-white"
               >
                 {phoneDisplay}
               </a>
             </div>
           </div>
 
-          <!-- Instagram -->
+          {/* Instagram */}
           <div class="flex items-start gap-3 sm:col-span-2">
-            <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/5">
+            <span class="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/10">
               <svg viewBox="0 0 24 24" class="h-4 w-4" aria-hidden="true">
                 <path
                   fill="currentColor"
                   d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5Zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5ZM18 6.8a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.8Z"
-                ></path>
+                />
               </svg>
             </span>
 
@@ -88,7 +93,8 @@ const therapistName = "Analía Zarate";
                 href={instagramUrl}
                 target="_blank"
                 rel="noreferrer noopener"
-                class="mt-1 inline-block text-[17px] underline underline-offset-4"
+                class="mt-1 inline-block text-[15px] text-white/80 underline underline-offset-4
+                       transition-colors duration-200 hover:text-white"
               >
                 {instagramUser}
               </a>
@@ -96,7 +102,7 @@ const therapistName = "Analía Zarate";
           </div>
         </div>
 
-        <div class="mt-10 text-sm text-[#545454]/80">
+        <div class="mt-10 text-sm text-white/60">
           © {new Date().getFullYear()} — Todos los derechos reservados.
         </div>
       </div>

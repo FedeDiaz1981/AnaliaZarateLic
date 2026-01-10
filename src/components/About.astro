@@ -2,51 +2,83 @@
 const name = "Analía Zárate";
 ---
 
-<section id="about" class="bg-white">
-  <div class="mx-auto max-w-6xl px-6 py-16 md:py-24">
-    <div class="grid gap-10 md:grid-cols-2 md:items-start">
-      <!-- Columna izquierda: títulos -->
-      <div>
-        <p class="text-[15px] font-medium text-[#545454]">Sobre mí</p>
-
-        <h2
-          class="mt-4 text-[#545454] font-semibold leading-tight
-                   text-4xl sm:text-5xl"
-        >
-          Mi nombre es
-          <span class="block mt-4 text-4xl sm:text-4xl font-bold">
-            {name}
-          </span>
-        </h2>
-
-        <!-- shape decorativo (simplificado). Si querés exacto, te lo pongo con el SVG completo -->
-        <div class="mt-8 h-12 w-12 rounded-full bg-[#EF7C8E]/25"></div>
+<section id="sobre-mi">
+  <div class="grid gap-10 md:grid-cols-2 md:items-start">
+    {/* Columna izquierda */}
+    <div>
+      <div class="flex flex-wrap items-center gap-2">
+        <p class="text-xs font-extrabold tracking-[0.14em] text-[#6D5EF7] uppercase">
+          Sobre mí
+        </p>
+        <span class="h-1 w-1 rounded-full bg-black/20"></span>
+        <p class="text-xs font-medium text-[#6B6B6B]">Acompañamiento clínico</p>
       </div>
 
-      <!-- Columna derecha: texto -->
-      <div class="text-[#545454] text-[17px] leading-relaxed space-y-6">
-        <p>
-          Acompaño a personas en sus procesos personales desde una mirada
-          clínica que prioriza la subjetividad, la singularidad y la escucha
-          atenta.
-        </p>
+      <h2
+        class="mt-4 font-extrabold tracking-tight text-[#2E2E2E]
+               text-3xl leading-tight
+               sm:text-4xl"
+      >
+        Mi nombre es{" "}
+        <span class="relative mt-3 inline-block">
+          <span class="relative z-10">{name}</span>
+          <span
+            class="absolute -bottom-1 left-0 right-0 h-2 rounded-full bg-[#FF7CC8]/40"
+            aria-hidden="true"
+          ></span>
+        </span>
+      </h2>
 
-        <p>
-          Entiendo que cada historia es única, y que el trabajo terapéutico se
-          construye respetando los tiempos y los modos de cada persona. Desde
-          muy chica comencé a descubrir esta vocación, en distintas situaciones
-          de la vida cotidiana en las que me sentía convocada y dispuesta a
-          ayudar a otros, a escuchar y a acompañar. 
-        </p>
-
-        <p>
-          Ese interés temprano fue
-          dando forma a una elección que hoy se expresa en mi práctica clínica,
-          que ejerzo con pasión y compromiso. Licenciada en Psicología y mi
-          objetivo es acompañarte en tu proceso buscando sacar tu mejor versión.
-        </p>
-        
+      {/* Detalle decorativo + micro dinámica */}
+      <div class="mt-8 flex items-center gap-3">
+        <span
+          class="h-10 w-10 rounded-full bg-[#6D5EF7]/15 ring-1 ring-black/5
+                 transition-transform duration-200 hover:-translate-y-0.5"
+        ></span>
+        <span class="text-xs text-[#6B6B6B]">Escucha atenta y proceso a tu ritmo</span>
       </div>
+    </div>
+
+    {/* Columna derecha */}
+    <div class="space-y-6 text-[17px] leading-relaxed text-[#6B6B6B]">
+      <p>
+        Acompaño a personas en sus procesos personales desde una mirada{" "}
+        <span class="font-semibold text-[#2E2E2E]">clínica</span> que prioriza la{" "}
+        <span class="font-semibold text-[#2E2E2E]">subjetividad</span>, la{" "}
+        <span class="font-semibold text-[#2E2E2E]">singularidad</span> y la{" "}
+        <span class="font-semibold text-[#2E2E2E]">escucha atenta</span>.
+      </p>
+
+      <p>
+        Entiendo que cada historia es{" "}
+        <span class="font-semibold text-[#2E2E2E]">única</span>, y que el trabajo terapéutico se
+        construye respetando los{" "}
+        <span class="font-semibold text-[#2E2E2E]">tiempos</span> y los{" "}
+        <span class="font-semibold text-[#2E2E2E]">modos</span> de cada persona. Desde muy chica
+        comencé a descubrir esta vocación, en distintas situaciones de la vida cotidiana en las que me
+        sentía convocada y dispuesta a ayudar a otros, a escuchar y a acompañar.
+      </p>
+
+      {/* Bloque destacado para dinamismo */}
+      <div
+        class="rounded-2xl bg-white/70 p-6 ring-1 ring-black/5 shadow-sm
+               transition-transform duration-200 hover:-translate-y-0.5"
+      >
+        <p class="text-sm font-semibold text-[#2E2E2E]">Mi enfoque</p>
+        <p class="mt-2 text-[15px] leading-relaxed text-[#6B6B6B]">
+          Un espacio de confianza donde puedas{" "}
+          <span class="font-semibold text-[#2E2E2E]">poner en palabras</span> lo que te pasa y{" "}
+          <span class="font-semibold text-[#2E2E2E]">construir recursos propios</span>.
+        </p>
+      </div>
+
+      <p>
+        Ese interés temprano fue dando forma a una elección que hoy se expresa en mi práctica clínica,
+        que ejerzo con{" "}
+        <span class="font-semibold text-[#2E2E2E]">pasión</span> y{" "}
+        <span class="font-semibold text-[#2E2E2E]">compromiso</span>. Licenciada en Psicología y mi
+        objetivo es acompañarte en tu proceso buscando sacar tu mejor versión.
+      </p>
     </div>
   </div>
 </section>

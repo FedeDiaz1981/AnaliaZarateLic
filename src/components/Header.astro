@@ -2,27 +2,30 @@
 const { brand = "Tu Marca" } = Astro.props;
 ---
 
-<header
-  id="SITE_HEADER"
-  class="relative left-0 ml-0 w-full min-w-0 z-[49] h-[155px]"
-  style="
-    --bg-overlay-color: transparent;
-    --bg-gradient: none;
-    --shd: none;
-    --brwt: 0px;
-    --brwb: 0px;
-    --rd: 0px;
-    --backdrop-filter: none;
-  "
->
-  <!-- Si querés una “capa” como Wix (overlay), dejala lista -->
-  <div class="absolute inset-0" aria-hidden="true"></div>
-
-  <!-- Contenido -->
-  <div class="relative mx-auto flex h-full max-w-6xl items-center justify-between px-6">
-    <a href="/" class="text-sm font-semibold tracking-wide">
+<header class="sticky top-0 z-50 w-full backdrop-blur bg-white/70 border-b border-black/5">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a
+      href="/"
+      class="text-sm font-semibold tracking-wide transition-opacity duration-200 hover:opacity-80"
+      aria-label={brand}
+    >
       {brand}
     </a>
 
+    <nav class="hidden md:flex items-center gap-6 text-sm text-[#6B6B6B]">
+      <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#sobre-mi">Sobre mí</a>
+      <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#espacio">Espacio terapéutico</a>
+      <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#metodo">Forma de trabajo</a>
+      <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#razones">Razones</a>
+      <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#contacto">Contacto</a>
+    </nav>
+
+    <a
+      href="#contacto"
+      class="inline-flex items-center rounded-xl bg-[#7C6CF6] px-4 py-2 text-sm font-medium text-white
+             transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0 hover:brightness-95"
+    >
+      Agendar sesión
+    </a>
   </div>
 </header>

@@ -6,20 +6,56 @@ import About from "../components/About.astro";
 import EspacioTerapeutico from "../components/EspacioTerapeutico.astro";
 import FormaDeTrabajo from "../components/FormaDeTrabajo.astro";
 import Razones from "../components/Razones.astro";
-import Services from "../components/Services.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<BaseLayout title="Landing">
+<BaseLayout title="Analía Zarate Lic">
   <Header brand="Analía Zárate" />
+
   <main>
-    <Hero />
-    <About />
-    <EspacioTerapeutico />
-    <FormaDeTrabajo />
-    <Razones />
-    <Contact />
+    {/* HERO - gradiente suave estilo Canva */}
+    <section class="bg-gradient-to-r from-[#BEE9E8] via-[#CDB4F6] to-[#F1D4F8]">
+      <div class="max-w-6xl mx-auto px-6 py-20 md:py-28" data-reveal>
+        <Hero />
+      </div>
+    </section>
+
+    {/* ABOUT - blanco */}
+    <section class="bg-white">
+      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+        <About />
+      </div>
+    </section>
+
+    {/* ESPACIO TERAPÉUTICO - gris suave */}
+    <section class="bg-[#DCE6FF]">
+      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+        <EspacioTerapeutico />
+      </div>
+    </section>
+
+    {/* FORMA DE TRABAJO - menta suave */}
+    <section class="bg-[#CFF8EA]">
+      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+        <FormaDeTrabajo />
+      </div>
+    </section>
+
+    {/* RAZONES - rosa muy leve */}
+    <section class="bg-[#FFD3E3]">
+      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+        <Razones />
+      </div>
+    </section>
+
+    {/* CONTACT - vuelve a blanco para “cerrar limpio” */}
+    <section class="bg-[#D7DBFF]">
+      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+        <Contact />
+      </div>
+    </section>
   </main>
+
   <Footer />
 </BaseLayout>
