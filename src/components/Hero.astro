@@ -7,7 +7,7 @@ const email = "licmilagrospereira@gmail.com";
   <div class="grid items-center gap-10 md:grid-cols-2">
     {/* Texto */}
     <div class="max-w-xl">
-      {/* Chips (más dinámico y moderno) */}
+      {/* Chips */}
       <div class="flex flex-wrap items-center gap-2">
         <p
           class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-xs font-semibold
@@ -26,30 +26,50 @@ const email = "licmilagrospereira@gmail.com";
         </p>
       </div>
 
+    
+
+      {/* Headline */}
       <h1
-        class="mt-6 font-extrabold tracking-tight text-[#2E2E2E]
+        class="mt-4 font-extrabold tracking-tight text-[#2E2E2E]
                text-3xl leading-tight
                sm:text-4xl sm:leading-tight
                md:text-[52px] md:leading-[1.06]"
       >
-        Tu <span class="text-[#6D5EF7]">salud mental</span> es igual de importante que la física.
-        <span class="mt-3 block text-[#2E2E2E]">
-          No la dejes <span class="relative inline-block">
-            <span class="relative z-10">para después</span>
-            <span
-              class="absolute -bottom-1 left-0 right-0 h-2 rounded-full bg-[#FF7CC8]/40"
-              aria-hidden="true"
-            ></span>
-          </span>.
-        </span>
+        Un espacio de{" "}
+        <span class="text-[#6D5EF7]">escucha</span>,{" "}
+        <span class="relative inline-block">
+          <span class="relative z-10">cuidado</span>
+          <span
+            class="absolute -bottom-1 left-0 right-0 h-2 rounded-full bg-[#FF7CC8]/40"
+            aria-hidden="true"
+          ></span>
+        </span>{" "}
+        y acompañamiento
       </h1>
 
-      <p class="mt-6 text-[#6B6B6B] text-lg leading-relaxed sm:text-xl">
-        Psicología para el <span class="font-semibold text-[#2E2E2E]">bienestar personal</span>, con un espacio de
-        <span class="font-semibold text-[#2E2E2E]">escucha</span>, <span class="font-semibold text-[#2E2E2E]">calma</span> y
-        <span class="font-semibold text-[#2E2E2E]">acompañamiento</span>.
-      </p>
+      {/* Texto largo */}
+      <div class="mt-6 space-y-4 text-[#6B6B6B] text-[17px] leading-relaxed sm:text-lg">
+        <p>
+          La terapia es un lugar donde poder{" "}
+          <span class="font-semibold text-[#2E2E2E]">detenerse</span>,{" "}
+          <span class="font-semibold text-[#2E2E2E]">poner en palabras</span> lo que duele, lo que inquieta y también lo
+          que busca transformarse.
+        </p>
 
+        <p>
+          Un espacio de encuentro, pensado para acompañar procesos personales con{" "}
+          <span class="font-semibold text-[#2E2E2E]">respeto</span>,{" "}
+          <span class="font-semibold text-[#2E2E2E]">tiempo</span> y{" "}
+          <span class="font-semibold text-[#2E2E2E]">compromiso profesional</span>.
+        </p>
+
+        <p>
+          Comenzar terapia no implica tener todo claro: implica{" "}
+          <span class="font-semibold text-[#2E2E2E]">animarse a empezar</span>.
+        </p>
+      </div>
+
+      {/* CTAs */}
       <div class="mt-8 flex flex-wrap items-center gap-4">
         <a
           href={`mailto:${email}`}

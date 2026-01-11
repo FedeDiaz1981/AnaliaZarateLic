@@ -14,43 +14,63 @@ import Footer from "../components/Footer.astro";
   <Header brand="Analía Zárate" />
 
   <main>
-    {/* HERO - gradiente suave estilo Canva */}
-    <section class="bg-gradient-to-r from-[#BEE9E8] via-[#CDB4F6] to-[#F1D4F8]">
-      <div class="max-w-6xl mx-auto px-6 py-20 md:py-28" data-reveal>
+    {/* HERO -> wave to white */}
+    <section class="section-wave bg-gradient-to-r from-[#BEE9E8] via-[#CDB4F6] to-[#F1D4F8]">
+      <div class="section-inner max-w-6xl mx-auto px-6 py-20 md:py-28" data-reveal>
         <Hero />
       </div>
+
+      <svg class="wave-bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#FFFFFF" d="M0,64 C240,120 480,8 720,64 C960,120 1200,8 1440,64 L1440,120 L0,120 Z"></path>
+      </svg>
     </section>
 
-    {/* ABOUT - blanco */}
-    <section class="bg-white">
-      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+    {/* ABOUT (white) -> wave to #DCE6FF */}
+    <section class="section-wave bg-white">
+      <div class="section-inner max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
         <About />
       </div>
+
+      <svg class="wave-bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#DCE6FF" d="M0,64 C240,120 480,8 720,64 C960,120 1200,8 1440,64 L1440,120 L0,120 Z"></path>
+      </svg>
     </section>
 
-    {/* ESPACIO TERAPÉUTICO - gris suave */}
-    <section class="bg-[#DCE6FF]">
-      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+    {/* ESPACIO (#DCE6FF) -> wave to white */}
+    <section class="section-wave bg-[#DCE6FF]">
+      <div class="section-inner max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
         <EspacioTerapeutico />
       </div>
+
+      <svg class="wave-bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#FFFFFF" d="M0,64 C240,120 480,8 720,64 C960,120 1200,8 1440,64 L1440,120 L0,120 Z"></path>
+      </svg>
     </section>
 
-    {/* FORMA DE TRABAJO - menta suave */}
-    <section class="bg-[#CFF8EA]">
-      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+    {/* FORMA (white) -> wave to #FFD3E3 */}
+    <section class="section-wave bg-white">
+      <div class="section-inner max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
         <FormaDeTrabajo />
       </div>
+
+      <svg class="wave-bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#FFD3E3" d="M0,64 C240,120 480,8 720,64 C960,120 1200,8 1440,64 L1440,120 L0,120 Z"></path>
+      </svg>
     </section>
 
-    {/* RAZONES - rosa muy leve */}
-    <section class="bg-[#FFD3E3]">
-      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
+    {/* RAZONES (#FFD3E3) -> wave to white */}
+    <section class="section-wave bg-[#FFD3E3]">
+      <div class="section-inner max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
         <Razones />
       </div>
+
+      <svg class="wave-bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#FFFFFF" d="M0,64 C240,120 480,8 720,64 C960,120 1200,8 1440,64 L1440,120 L0,120 Z"></path>
+      </svg>
     </section>
 
-    {/* CONTACT - vuelve a blanco para “cerrar limpio” */}
-    <section class="bg-[#D7DBFF]">
+    {/* CONTACT (white) - último: sin wave */}
+    <section class="bg-white">
       <div class="max-w-6xl mx-auto px-6 py-16 md:py-24" data-reveal>
         <Contact />
       </div>

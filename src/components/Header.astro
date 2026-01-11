@@ -1,18 +1,31 @@
 ---
-const { brand = "Tu Marca" } = Astro.props;
+const { brand = "Analía Zárate" } = Astro.props;
 ---
 
 <header class="sticky top-0 z-50 w-full backdrop-blur bg-white/70 border-b border-black/5">
-  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a
-      href="/"
-      class="text-sm font-semibold tracking-wide transition-opacity duration-200 hover:opacity-80"
-      aria-label={brand}
-    >
-      {brand}
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
+    {/* Marca */}
+    <a href="/" class="leading-tight group" aria-label={brand}>
+      <p class="text-3xl font-black tracking-tight text-[#2E2E2E]">
+        <span class="relative inline-block">
+          <span class="relative z-10 text-[#6D5EF7]">{brand}</span>
+          
+        </span>
+      </p>
+
+      <p class="mt-0.5 text-xs font-semibold text-[#2E2E2E]">
+        <span class="relative inline-block">
+          <span class="relative z-10">Licenciada en psicología</span>
+          <span
+            class="absolute -bottom-0.5 left-0 right-0 h-1.5 rounded-full bg-[#6D5EF7]/20"
+            aria-hidden="true"
+          ></span>
+        </span>
+      </p>
     </a>
 
-    <nav class="hidden md:flex items-center gap-6 text-sm text-[#6B6B6B]">
+    {/* Nav */}
+    <nav class="hidden items-center gap-6 text-sm text-[#6B6B6B]">
       <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#sobre-mi">Sobre mí</a>
       <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#espacio">Espacio terapéutico</a>
       <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#metodo">Forma de trabajo</a>
@@ -20,9 +33,10 @@ const { brand = "Tu Marca" } = Astro.props;
       <a class="transition-colors duration-200 hover:text-[#2E2E2E]" href="#contacto">Contacto</a>
     </nav>
 
+    {/* CTA */}
     <a
       href="#contacto"
-      class="inline-flex items-center rounded-xl bg-[#7C6CF6] px-4 py-2 text-sm font-medium text-white
+      class="inline-flex items-center rounded-xl bg-[#6D5EF7] px-4 py-2 text-sm font-semibold text-white
              transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0 hover:brightness-95"
     >
       Agendar sesión
