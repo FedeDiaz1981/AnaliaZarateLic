@@ -1,3 +1,7 @@
+---
+const razonesImgUrl = "/razones.jpg";
+---
+
 <section id="razones" data-reveal="up" class="relative">
   {/* Glow suave general */}
   <div class="pointer-events-none absolute inset-0 -z-10 opacity-70" aria-hidden="true">
@@ -5,12 +9,27 @@
     <div class="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#FF7CC8]/10 blur-3xl"></div>
   </div>
 
-  <div class="grid gap-10 md:grid-cols-2 md:items-start">
-    {/* IZQUIERDA: texto */}
+  <div class="grid gap-10 md:grid-cols-[auto_minmax(0,1fr)_minmax(0,1fr)] md:items-center">
+    {/* DERECHA: título (mismo estilo que “¿Qué es la terapia?”) */}
+    <div
+      class="flex items-center justify-center md:justify-end md:col-start-3 md:row-start-1"
+      data-reveal="right"
+    >
+      <h3
+        class="text-center md:text-right font-serif font-black tracking-tight leading-[1.05]
+               text-[34px] sm:text-[44px] md:text-[5rem]
+               title-silhouette-sharp title-silhouette-sharp-anim"
+      >
+        ¿Por qué iniciar terapia?
+      </h3>
+    </div>
+
+    {/* CENTRO: texto */}
     <div
       class="rounded-3xl bg-white/70 p-6 ring-1 ring-black/5 shadow-sm
-             transition-transform duration-300 ease-out hover:-translate-y-1"
-      data-reveal="left"
+             transition-transform duration-300 ease-out hover:-translate-y-1
+             md:col-start-2 md:row-start-1"
+      data-reveal="up"
     >
       <ul
         data-reveal-item
@@ -54,15 +73,33 @@
       </div>
     </div>
 
-    {/* DERECHA: título (mismo estilo que “¿Qué es la terapia?”) */}
-    <div class="md:pl-10 flex items-center justify-center md:justify-start" data-reveal="right">
-      <h3
-        class="font-serif font-black tracking-tight leading-[1.05]
-               text-[34px] sm:text-[44px] md:text-[5rem]
-               title-silhouette-sharp title-silhouette-sharp-anim"
+    {/* IZQUIERDA: foto */}
+    <div
+      class="mt-8 justify-self-end md:mt-0 md:col-start-1 md:row-start-1 md:justify-self-start md:self-center"
+      data-reveal="left"
+    >
+      <div
+        class="relative inline-block w-[220px] sm:w-[240px] md:w-[240px] lg:w-[280px] xl:w-[320px] overflow-visible rounded-[14px] bg-white p-2
+               shadow-[0_6px_18px_rgba(15,23,42,0.12),0_20px_50px_rgba(15,23,42,0.14)]
+               [transform:rotate(var(--tilt))] transition-[transform,box-shadow] duration-[250ms] ease-out
+               hover:[transform:translateY(-2px)_rotate(calc(var(--tilt)*0.4))]
+               before:content-[''] before:absolute before:-top-3 before:left-8 before:h-6 before:w-24 before:rounded-[6px]
+               before:bg-gradient-to-br before:from-white/70 before:to-white/30 before:border before:border-white/60
+               before:shadow-[0_2px_6px_rgba(0,0,0,0.15)] before:backdrop-blur-[2px] before:rotate-[-8deg]
+               before:z-20 before:pointer-events-none
+               after:content-[''] after:absolute after:-bottom-3 after:right-8 after:h-6 after:w-24 after:rounded-[6px]
+               after:bg-gradient-to-br after:from-white/70 after:to-white/30 after:border after:border-white/60
+               after:shadow-[0_2px_6px_rgba(0,0,0,0.15)] after:backdrop-blur-[2px] after:rotate-[7deg]
+               after:z-20 after:pointer-events-none
+               tilt-l"
       >
-        ¿Por qué iniciar terapia?
-      </h3>
+        <img
+          src={razonesImgUrl}
+          alt="Imagen de razones para iniciar terapia"
+          class="block w-full rounded-[12px]"
+          loading="lazy"
+        />
+      </div>
     </div>
   </div>
 </section>

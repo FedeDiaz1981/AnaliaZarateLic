@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -72,7 +72,7 @@
   box-shadow: 0 14px 45px rgba(15, 23, 42, 0.12);
 }
 
-/* Marker underline (subrayado tipo “pincel”) */
+/* Marker underline (subrayado tipo â€œpincelâ€) */
 .marker {
   position: relative;
   display: inline-block;
@@ -135,7 +135,7 @@
   opacity: 0.45;
 }
 
-/* breathing / pulse lento (para títulos) */
+/* breathing / pulse lento (para tÃ­tulos) */
 .glow-pulse::before { animation: glowPulse1 3.8s ease-in-out infinite; }
 .glow-pulse::after  { animation: glowPulse2 4.6s ease-in-out infinite; }
 
@@ -203,7 +203,7 @@
 }
 
 /* =========================
-   Title Silhouette Shadows — más definido
+   Title Silhouette Shadows â€” mÃ¡s definido
    ========================= */
 .title-silhouette-sharp {
   color: var(--primary);
@@ -264,7 +264,7 @@
 }
 
 /* =========================
-   Section Waves (bottom only) — FIXED (no rotate)
+   Section Waves (bottom only) â€” FIXED (no rotate)
    ========================= */
 .section-wave {
   position: relative;
@@ -286,10 +286,10 @@
   display: block;
   z-index: 5;
   pointer-events: none;
-  transform: none; /* clave: evita que queden al revés */
+  transform: none; /* clave: evita que queden al revÃ©s */
 }
 
-/* Si alguna vez necesitás invertir una ola puntual */
+/* Si alguna vez necesitÃ¡s invertir una ola puntual */
 .wave-bottom--flip {
   transform: scaleY(-1);
 }
@@ -319,3 +319,29 @@
     animation: none !important;
   }
 }
+
+/* Paper texture background */
+.paper-texture {
+  background-color: #fbf9f4;
+  background-image:
+    radial-gradient(1200px 1200px at -10% -20%, rgba(255,255,255,0.7), rgba(255,255,255,0) 60%),
+    radial-gradient(1000px 1000px at 110% 10%, rgba(255,255,255,0.5), rgba(255,255,255,0) 55%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0 1px, transparent 1px 8px);
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.02);
+}
+/* Tape photo tilt helpers */
+.tilt-l  { --tilt: -1.4deg; }
+.tilt-r  { --tilt: 1.4deg; }
+.tilt-l2 { --tilt: -0.9deg; }
+.tilt-r2 { --tilt: 0.9deg; }
+
+@media (max-width: 640px) {
+  .tilt-l,
+  .tilt-r,
+  .tilt-l2,
+  .tilt-r2 {
+    --tilt: 0deg;
+  }
+}
+

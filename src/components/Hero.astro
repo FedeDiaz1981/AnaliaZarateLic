@@ -107,17 +107,22 @@ const email = "https://wa.me/5491133124458?text=Quiero%20hacer%20una%20consulta"
     </div>
 
     {/* Imagen derecha */}
-    <div class="order-first flex justify-center md:order-none md:justify-end">
-      <div
-        class="rounded-3xl bg-white/60 p-2 ring-1 ring-black/5 shadow-sm
-               transition-transform duration-200 hover:-translate-y-1"
-      >
-        <img
-          src={rightImgUrl}
-          alt="Imagen principal"
-          class="h-auto w-[260px] rounded-2xl object-cover sm:w-[320px] md:w-[460px]"
-          fetchpriority="high"
-        />
+    <div class="order-first -mx-6 -mt-20 flex justify-center sm:mx-0 sm:mt-0 md:order-none md:justify-end">
+      <div class="relative w-full sm:w-auto">
+        <div
+          class="absolute -inset-6 rounded-[32px] bg-gradient-to-tr from-[#6D5EF7] via-[#CDB4F6] to-[#FF7CC8]
+                 opacity-40 blur-2xl sm:opacity-60"
+          aria-hidden="true"
+        ></div>
+
+        <div class="relative overflow-hidden rounded-2xl ring-1 ring-black/5 shadow-xl">
+          <img
+            src={rightImgUrl}
+            alt="Imagen principal"
+            class="h-auto w-full object-cover sm:w-[320px] md:w-[460px]"
+            fetchpriority="high"
+          />
+        </div>
       </div>
     </div>
   </div>
